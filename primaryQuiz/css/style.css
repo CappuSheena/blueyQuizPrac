@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+.matemasie-regular {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: none;
+    background-image: url(../media/clouds_bckground.png);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#title_header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15em;
+    font-family: "Matemasie";
+}
+
+#title_header > h1{
+    font-size: 9rem;
+    animation: fadeIn 5s;
+    letter-spacing: 1.1rem;
+    text-shadow: 15px 15px 7px rgba(0, 0, 0, 0.5);
+}
+
+
+#index_intro_card{
+    width: 60%;
+    height: 70%;
+    background-color: #c0dee3;
+    border: white 30px solid;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20%;
+    font-family: "Matemasie";
+    font-size: 5rem;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+#index_intro_card span{
+    border: white 10px solid;
+    border-radius: 15%;
+    padding: 1.5rem;
+    background-color: #e5c4d2;
+    box-shadow: 15px 15px 9px 0px rgba(0,0,0,0.1);
+}
+
+#index_intro_card span:hover{
+    border: white 10px solid;
+    background-color: #e9cbd8;
+    box-shadow: 25px 25px 9px 0px rgba(0,0,0,0.3);
+    text-shadow: 4px 4px 7px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+
+@keyframes fadeIn{
+    0% {opacity: 0;
+        font-size: 2rem;}
+        
+    100% {opacity: 1;
+        font-size: 9rem;}
+}
+
+
+/* QUESTIONS PAGE */
+
+
+#score_card{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background: #c0dee3;
+    width: 7em;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    border: 5px white solid;
+}
+
+#score_card > #current_score{
+    font-size: 3rem;
+    font-family: "Matemasie";
+}
+
+#progress_btns{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    
+}
+
+#back_btn{
+    left: 10%;
+}
+
+#next_btn{
+    right: 10%;
+}
+
+#back_btn, #next_btn{
+    position: absolute;
+    background: #c0dee3;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+    border: 5px white solid;
+    font-family: "Matemasie";
+    color: white;
+    font-size: 2rem;
+}
+
+#back_btn:hover, #next_btn:hover{
+    border: white 10px solid;
+    background-color: #cbd6f8;
+    box-shadow: 25px 25px 9px 0px rgba(0,0,0,0.3);
+    text-shadow: 4px 4px 7px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+
+}
+
+.question_card{
+    width: 60%;
+    height: 70%;
+    background-color: #c0dee3;
+    border: white 30px solid;
+    border-radius: 15%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+.active{
+    display: flex;
+}
+
+.question_text{
+    font-size: 3rem;
+    padding: 1em;
+    text-align: center;
+}
+
+.question_card > div{
+    font-size: 2rem;
+    height: 30%;
+    width: auto;
+}
+

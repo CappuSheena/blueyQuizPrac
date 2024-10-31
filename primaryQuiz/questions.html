@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="setQuestions()">
+
+   
+
+    <div id="title_header">
+        <h1>Quizzle</h1>
+    </div>
+
+
+    <div id="progress_btns">
+        <button id="back_btn">&lt;</button>
+        <button id="next_btn">></button>
+    </div>
+
+
+    <div class="question_card active" id="qu0">
+
+        <label  id="q0" class="question_text"></label>
+        <img src="media/bandit1.png" alt="Bandit" width="190px">
+        <div>
+            <input type="radio" name="ansq0" value="robert">Robert<br>
+            <input type="radio" name="ansq0" value="heisenberg">Heisenberg<br>
+            <input type="radio" name="ansq0" value="bandit">Bandit<br>
+        </div>
+        <span id="q0f"></span>
+
+    </div>
+    
+
+    <div class="question_card" id="qu1" >
+
+        <label  id="q1" class="question_text"></label>
+        <img src="media/bingo1.png" alt="bingo" width="300px">
+        <div>
+            <input type="text" id="ansq1">
+        </div>
+        <span id="q1f"></span>
+
+    </div>
+
+
+    <div class="question_card" id="qu2">
+
+        <label  id="q2" class="question_text"></label>
+        <img src="media/img3.png" alt="family" width="190px">
+        <div>
+            <input type="radio" name="ansq2" value="blue heeler" class="radio_input">Blue Heeler<br>
+            <input type="radio" name="ansq2" value="border collie" class="radio_input">Border Collie<br>
+            <input type="radio" name="ansq2" value="chiahuahua" class="radio_input">Chiahuahua<br>
+        </div>
+        <span id="q2f"></span>
+    </div>
+
+
+    <div class="question_card" id="qu3">
+
+        <label  id="q3" class="question_text"></label>
+        <img src="media/img4.png" alt="play" width="280px">
+        <div>
+            <input type="radio" name="ansq3" value="hide n seek" class="radio_input">Hide n Seek<br>
+            <input type="radio" name="ansq3" value="i spy" class="radio_input">I Spy<br>
+            <input type="radio" name="ansq3" value="keepy uppy" class="radio_input">Keepy Uppy<br>
+        </div>
+        <span id="q3f"></span>
+    </div>
+
+
+    <div class="question_card" id="qu4">
+
+        <label  id="q4" class="question_text"></label>
+        <img src="media/img5.png" alt="uncle rad" width="190px">
+        <div>
+            <input type="radio" name="ansq4" value="prime minister" class="radio_input">Prime Minister<br>
+            <input type="radio" name="ansq4" value="archaeologist" class="radio_input">Archaeologist<br>
+            <input type="radio" name="ansq4" value="college lecturer" class="radio_input">College Lecturer<br>
+        </div>
+        <span id="q4f"></span>
+    </div>
+
+
+    <div class="question_card" id="qu5">
+
+        <label  id="q5" class="question_text"></label>
+        <img src="media/Chilli.png" alt="chilli" width="190px">
+        <div>
+            <input type="text" id="ansq5">
+        </div>
+        <span id="q5f"></span>
+    </div>
+
+
+    <div class="question_card" id="qu6">
+
+        <label  id="q6" class="question_text"></label>
+        <img src="media/img6.png" alt="globe" width="300px">
+        <div>
+            <input type="radio" name="ansq6" value="australia" class="radio_input">Australia<br>
+            <input type="radio" name="ansq6" value="germany" class="radio_input">germany<br>
+            <input type="radio" name="ansq6" value="ireland" class="radio_input">Ireland<br>
+        </div>
+        <span id="q6f"></span>
+    </div>
+
+
+    <div class="question_card" id="qu7">
+
+        <label  id="q7" class="question_text"></label>
+        <img src="media/grannies.png" alt="Grannies" width="300px">
+        <div>
+            <input type="radio" name="ansq7" value="margaret and elle" class="radio_input">Margaret amd Elle<br>
+            <input type="radio" name="ansq7" value="mabel and beryl" class="radio_input">Mabel and Beryl<br>
+            <input type="radio" name="ansq7" value="janet and rita" class="radio_input">Janet and Rita<br>
+        </div>
+        <span id="q7f"></span>
+    </div>
+
+
+    <div class="question_card" id="qu8">
+
+        <label  id="q8" class="question_text"></label>
+        <img src="media/Judo.png" alt="Judo" width="300px">
+        <div>
+            <input type="text" id="ansq8">
+        </div>
+        <span id="q8f"></span>
+    </div>
+
+
+    <div class="question_card" id="qu9">
+
+        <label  id="q9" class="question_text"></label>
+        <img src="media/chilli2.png" alt="chilli" width="190px">
+        <div>
+            <input type="radio" name="ansq9" value="airport security" class="radio_input">Airport Security<br>
+            <input type="radio" name="ansq9" value="web developer" class="radio_input">Web Developer<br>
+            <input type="radio" name="ansq9" value="queens press secretary" class="radio_input">Queens Press secretary<br>
+        </div>
+        <span id="q9f"></span>
+    </div>
+
+
+
+
+    
+    
+
+    <div id="score_card">
+        <span id="current_score">0</span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
