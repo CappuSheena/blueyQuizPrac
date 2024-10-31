@@ -1,0 +1,7 @@
+I want to update the future code to have dynamic reactions. Such as;
+an admin page for adding and removing questions.
+
+The current code uses switches. In future I want to change this to an if statement that will allow someone to add and remove a question by checking the condition of which type of question it is.
+
+The current site is complete enough to be used. It is debugged etc.
+There is no end page which congratulates the user or shares a final result.

@@ -25,8 +25,12 @@ function setQuestions() {
 document.addEventListener('DOMContentLoaded', function() {
     setQuestions(); // Call this to set questions on page load
     let currentQuestion = 0;
-    let counter = 0; // Tracks the correct answer count
+    let score = 0; // Tracks the correct answer count
+    //Using querySelectorAll allows us to futureproof adding questions. It means the user can have 5 questions or 60, it will count all
     const questions = document.querySelectorAll('.question_card');
+
+    //This creates an array with the above questions. I have written it this way so that in the future, if we add an input for new questions (for admin), it will automatically fill the array with new questions. It will also fill(false) so that on load, all questions are initialsed as unchecked
+    const scoreCounted = Array(questions.length).fill(false);
 
     // Show the first question
     questions[currentQuestion].classList.add('active');
@@ -60,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let isCorrect = false;
 
-        // Check the answer for the current question and increment the score if correct
+        // Check the answer for the current question
         switch (currentQuestion) {
             case 0:
                 const ansQ0 = document.querySelector('input[name="ansq0"]:checked');
@@ -114,11 +118,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         }
 
-        if (isCorrect) {
-            counter++;
+
+        // This will now check if the question is correct AND if the question in the array has been counted toward the score. If it has not been counted before, it will add to the score, and mark it as true. This means if the user presses the back button to a question they have already answered, upon pressing the forward button, it will not add another to the score.
+        if (isCorrect && !scoreCounted[currentQuestion]) {
+            score++;
+            //encasing it with [currentQuestion] allows it to pass whatever question the user is already on. This is already initialised at the top of the code
+            scoreCounted[currentQuestion] = true;
         }
 
         // Update score display
-        document.getElementById("current_score").innerHTML = counter;
+        document.getElementById("current_score").innerHTML = score;
     }
 });
