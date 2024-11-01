@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script>
-    </script>
 
+
+    <div id="body_background_img"></div>
     <div id="title_header">
         <h1>Quizzle</h1>
+    </div>
+
+    
+    <div id="admin_q_btn">Admin</div>
+
+    <div id="admin_validation_card">
+        <div id="admin_exit">
+            <span></span>
+            <i class="fa-solid fa-xmark" id="admin_exit_btn"></i>
+        </div>
+        <span>Pin</span>
+
+        <form>
+            <input type="password" name="pin" maxlength="4">
+            <button type="submit">Submit</button>
+        </form>
+
     </div>
 
 
@@ -19,6 +37,7 @@
         <p>Ready to play?</p>
             <span id="continue__to_quiz">Let's Go!</span>
     </div>
+
 
 
 

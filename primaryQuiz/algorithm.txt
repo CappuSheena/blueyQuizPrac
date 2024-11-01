@@ -1,24 +1,16 @@
-The aim;
-
-One question per page
-each time the submit button is pressed, the users value is entered and saved
-then the window moves to the next question
-    : This could be done by stacking the 'cards' containing the questions,
-    : And then each time the user submits their answer, it triggers an animation, changing
-    : Opacity to 0, hides the card and the next is displayed
-
-
-Will do 4 radio, 4 checkbox and 2 answer boxes
-
-This will be coded as a mobile view, expanding to desktop
-
 colours;
 light blue; #c0dee3
 light pink; e5c4d2
 light purple; d5afff
 
-DONT encase the button in ahref
-it will leave a purple outline on refresh
 
-JAVASCRIPT ALGORITHM
+The aim;
+
+When the user clicks "admin" on the index page, a pop up will open in the middle of the page, and put a grey overlay on the body BEHIND.
+It should also have an exit button at the top (use fontAwesome)
+
+to achieve this, mt thinking is;
+
+have a div holding the pop up, with the display set to none. On click, change display to flex(?). On click should also add a blur to the body styles.
+
 

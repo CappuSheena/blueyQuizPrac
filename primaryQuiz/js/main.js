@@ -1,6 +1,3 @@
-// PARTIALLY WORKING
-// INCREMENTING SOME ANSWERS BY 2
-
 // Function to set questions on page load
 function setQuestions() {
     // Initializes the questions    
@@ -23,6 +20,15 @@ function setQuestions() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    
+
+
+
+
+
+
+
     setQuestions(); // Call this to set questions on page load
     let currentQuestion = 0;
     let counter = 0; // Tracks the correct answer count
