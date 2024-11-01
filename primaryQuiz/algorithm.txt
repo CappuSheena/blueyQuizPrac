@@ -12,5 +12,8 @@ an answer input
 a type input
 an IMG upload (if possible, challenging)
 
+It will also need
+2 additional inputs for question options (if type = radio / checklist)
+
 
 
