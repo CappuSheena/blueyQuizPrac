@@ -192,6 +192,7 @@ body{
     align-items: center;
     flex-direction: column;
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+    z-index: 15;
 }
 
 .active{
@@ -302,6 +303,7 @@ body{
     box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.1);
     font-family: "Itim";
     cursor: pointer;
+    color: white;
 }
 
 

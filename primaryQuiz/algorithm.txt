@@ -3,14 +3,14 @@ light blue; #c0dee3
 light pink; e5c4d2
 light purple; d5afff
 
+NEXT 
 
-The aim;
+Create the page that will have the admins form.
+It should have;
+A question input
+an answer input 
+a type input
+an IMG upload (if possible, challenging)
 
-When the user clicks "admin" on the index page, a pop up will open in the middle of the page, and put a grey overlay on the body BEHIND.
-It should also have an exit button at the top (use fontAwesome)
-
-to achieve this, mt thinking is;
-
-have a div holding the pop up, with the display set to none. On click, change display to flex(?). On click should also add a blur to the body styles.
 
 
