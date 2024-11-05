@@ -75,6 +75,9 @@ body{
     letter-spacing: 1.1rem;
     text-shadow: 15px 15px 7px rgba(0, 0, 0, 0.5);
     z-index: 15;
+    background-color: #8ac4e7;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -136,6 +139,7 @@ body{
     justify-content: center;
     border-radius: 15%;
     border: 5px white solid;
+    z-index: 15;
 }
 
 #score_card > #current_score{
@@ -202,7 +206,7 @@ body{
 
 .question_text{
     font-size: 3rem;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
 }
 
@@ -211,6 +215,29 @@ body{
     height: 30%;
     width: auto;
 }
+
+#complete_quiz_btn{
+    width: 6em;
+    height: 3em;
+    border: white 5px solid;
+    border-radius: 15%;
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: #e5c4d2;
+    box-shadow: 5px 5px 4px 0px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#complete_quiz_btn:hover{
+    box-shadow: 15px 15px 9px 0px rgba(0,0,0,0.3);
+    text-shadow: 4px 4px 7px rgba(255, 255, 255, 0.5);
+}
+
+
+
 
 /* ADMIN */
 
@@ -225,6 +252,7 @@ body{
     left: 1%;
     font-family: "Itim";
     cursor: pointer;
+    z-index: 15;
 }
 
 #admin_validation_card{
