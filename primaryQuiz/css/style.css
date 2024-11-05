@@ -308,3 +308,18 @@ body{
 
 
 
+/* COMPLETE PAGE */
+
+
+#completed_quiz_wrap{
+    width: 60%;
+    height: 70%;
+    background-color: #c0dee3;
+    border: white 30px solid;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+    z-index: 15;
+}
